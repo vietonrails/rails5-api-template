@@ -15,6 +15,8 @@ Execute following commands:
 
 ```
 rails rails new test-api --api --database=mysql -m app_template.rb
+# or
+rails rails new test-api --api --database=mysql -m https://github.com/vietonrails/rails5-api-template/blob/master/app_template.rb
 ```
 
 
