@@ -14,9 +14,9 @@ It's easy to start Rails5 API with useful gems and settings.
 Execute following commands:
 
 ```
-rails rails new test-api --api --database=mysql -m app_template.rb
+rails new test-api --api --database=mysql --skip-test-unit --skip-bundle -m app_template.rb
 # or
-rails rails new test-api --api --database=mysql -m https://github.com/vietonrails/rails5-api-template/blob/master/app_template.rb
+rails new test-api --api --database=mysql --skip-test-unit --skip-bundle -m https://raw.githubusercontent.com/vietonrails/rails5-api-template/master/app_template.rb
 ```
 
 
