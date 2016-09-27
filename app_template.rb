@@ -80,7 +80,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 CODE
 
 Bundler.with_clean_env do
-  run 'bundle install --path vendor/bundle --jobs=4 --without production'
+  run 'bundle install --without production'
 end
 
 # set config/application.rb
@@ -157,7 +157,7 @@ CODE
 
 # Initialize Figaro config
 Bundler.with_clean_env do
-  run 'bundle exec figaro install'
+  run 'figaro install'
 end
 
 # Rake DB Create
@@ -169,8 +169,4 @@ end
 # Remove Invalid Files
 run 'rm -rf ./lib/templates'
 
-# git init
-# ----------------------------------------------------------------
-git :init
-git :add => '.'
-git :commit => "-a -m 'first commit'"
+
